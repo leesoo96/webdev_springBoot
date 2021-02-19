@@ -1,0 +1,17 @@
+spring:
+#JSP
+  mvc:
+    view:
+      prefix:  /WEB-INF/views/
+      suffix: .jsp
+
+#JDBC
+  datasource:
+    url: jdbc:mysql://localhost/mango?autoReconnect=true
+    username: root
+    password: wls120239
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#Tomcat server 
+server:
+  port: 8090 
