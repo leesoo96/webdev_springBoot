@@ -12,7 +12,7 @@
 	</insert>
 	
 	<!-- 로그인 -->
-	<select id="selUser" resultType="UserEntity">"
+	<select id="selUser" resultType="UserEntity">
 		SELECT * FROM t_user
 		WHERE uid = #{uid}
 	</select>

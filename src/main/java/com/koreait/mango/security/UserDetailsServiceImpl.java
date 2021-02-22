@@ -24,4 +24,9 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 		
 		return mapper.selUser(p);
 	}
+	
+//	회원가입
+	public int join(UserEntity p) {
+		return mapper.insUser(p);
+	}
 }

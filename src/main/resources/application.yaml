@@ -7,11 +7,37 @@ spring:
 
 #JDBC
   datasource:
-    url: jdbc:mysql://localhost/mango?autoReconnect=true
+    url: jdbc:mysql://localhost:3306/mango?autoReconnect=true&serverTimezone=UTC
     username: root
     password: wls120239
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 88a081241234cfacbedef7018ac451316f3
+            client-secret: 88a081241234cfacbedef7018ac451316f3
+          
+          facebook:
+            client-id: 419794055964381
+            client-secret: c3d47da2bbed4060d827a6031caee649
+   
+custom: 
+  oauth2: 
+    kakao: 
+      client-id: 88a081241234cfacbedef7018ac451316f3 
+      client-secret: jpXULoEzrasfawegsqYXlRLyyOHn2i60q 
+    naver: 
+      client-id: MIslKCIejERxS4lcYjpv
+      client-secret: VJg_ha5Jn5
+      
+#Mybatis
+mybatis:
+  mapper-locations: mybatis-mapper/**/*.xml
+  type-aliases-package: com.koreait.mango.model
+  
 #Tomcat server 
 server:
-  port: 8090 
+  port: 8090

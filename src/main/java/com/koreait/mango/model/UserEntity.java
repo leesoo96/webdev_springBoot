@@ -33,12 +33,12 @@ public class UserEntity implements UserDetails {
 	}
 	
 	@Override
-	public String getPassword() {
+	public String getPassword() {		
 		return this.upw;
 	}
 	
 	@Override
-	public String getUsername() {
+	public String getUsername() {	
 		return this.uid;
 	}
 	
@@ -48,12 +48,12 @@ public class UserEntity implements UserDetails {
 	}
 	
 	@Override
-	public boolean isAccountNonLocked() {
+	public boolean isAccountNonLocked() {	
 		return true;
 	}
 	
 	@Override
-	public boolean isCredentialsNonExpired() {
+	public boolean isCredentialsNonExpired() {		
 		return true;
 	}
 	
